@@ -1,0 +1,79 @@
+.l1, .l2, .l3 {
+    list-style: none;
+    padding: 0;
+}
+
+.myIcon {
+    animation: transition 1s ease-in;
+    -webkit-animation: transition 1s ease-in;
+}
+
+.li1{
+    animation: fadeIn 0.8s ease-in;
+    -webkit-animation: fadeIn 0.8s ease-in;
+}
+
+.li2{
+    animation: fadeIn 0.9s ease-in;
+    -webkit-animation: fadeIn 0.9s ease-in;
+}
+
+.li3{
+    animation: fadeIn 1s ease-in;
+    -webkit-animation: fadeIn 1s ease-in;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+        -webkit-transform: translateY(200px);
+        -moz-transform: translateY(200px);
+        -ms-transform: translateY(200px);
+        -o-transform: translateY(200px);
+}
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+    }
+}
+
+@keyframes transition {
+    from {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .l1, .l2, .l3 {
+        margin-bottom: 20px;
+    }
+
+    .myIcon {
+        width: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .l1, .l2, .l3 {
+        margin-bottom: 15px;
+    }
+
+    .myIcon {
+        width: 80px;
+    }
+}

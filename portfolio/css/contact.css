@@ -1,0 +1,48 @@
+.nav-item + .nav-item {
+    margin-left: 25px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+/* Remove border and set transparent background for all cards */
+.card {
+    border: none; /* Remove the border */
+    background-color: transparent; /* Set background color to transparent */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    margin: 0.5rem; /* Margin for responsiveness */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin: 0.5rem auto;
+    }
+}
+
+@media (min-width: 769px) {
+    .card {
+        width: 18rem;
+        margin: 1rem;
+    }
+}
+
+/* Hover animation for each card */
+.card:hover {
+    animation: zoom 1s ease;
+    -webkit-animation: zoom 1s ease;
+}
+
+@keyframes zoom {
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
